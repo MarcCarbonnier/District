@@ -1,0 +1,105 @@
+html {
+    overflow-x: hidden;
+}
+
+nav {
+    height: 15vh;
+}
+
+div {
+    border: none;
+}
+
+.first {
+    background-color: grey;
+    width: 200vh;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    width: 32vh;
+    text-align: center;
+}
+
+#logo {
+    width: 100pt;
+    height: 104pt;
+    background-color: black;
+}
+/* pas a ce qu'il y a au-dessus bar du haut de la page */
+
+body{
+    background: linear-gradient(#325678, #824949);
+    height: 100vh;
+}
+.box{
+    position: relative;
+    background: linear-gradient(#951B1B,#21377E);
+    height: 50vh;
+    width: 50vh;
+    left: 75vh;
+    top: 10vh;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.couverts{
+    background-color: white;
+    width: 30vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 10vh;
+    top: 5vh;
+    font-size: x-large;
+    background-color:grey ;
+}
+button{
+    border: none;
+    background-color: none;
+    width: 30vh;
+}
+.date{
+    background-color: white;
+    width: 30vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 10vh;
+    top: 10vh;
+    font-size: x-large;
+    background-color: grey;
+}
+.horaire{
+    background-color: white;
+    width: 30vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 10vh;
+    top: 15vh;
+    font-size: x-large;
+    background-color: grey;
+}
+.reserve{
+    background-color: white;
+    width: 30vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 10vh;
+    top: 25vh;
+    font-size: x-large;
+    background-color: white;
+    border-radius: 5vh;
+}
+.reserveenvoi{
+    background-color: white;
+}

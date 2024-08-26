@@ -31,7 +31,7 @@ body{
   }
 .name{
     background: linear-gradient(grey, rgba(255, 255, 255, 0.425));
-    width: 20vh;
+    width: 30vh;
     position:relative;
     left: 11vh;
     top: 5vh;
@@ -40,7 +40,7 @@ body{
 .titre{
     text-align: center;
 }
-.container, .container2, .container3 {
+.container{
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.25);
@@ -60,9 +60,7 @@ body{
   height: 50vh;
   width: 40vh;
 }
-.container2{
-    left: 70vh;
-}
+
 
 .wrapper {
   width: 100%;
@@ -70,21 +68,13 @@ body{
 }
 
 .banner-image {
-  background-image: url(/images_the_district/food/cesar_salad.jpg);
+  background-image: url(/images_the_district/food/Food-Name-3631.jpg);
   background-position: center;
   background-size: cover;
   height: 250px;
   border-radius: 12px;
   border: 1px solid rgba(255,255,255, 0.255);
 }
-.banner-image2 {
-    background-image: url(/images_the_district/food/salad1.png);
-    background-position: center;
-    background-size: cover;
-    height: 250px;
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255, 0.255);
-  }
 
 h1{
   font-family: 'Righteous', sans-serif;
