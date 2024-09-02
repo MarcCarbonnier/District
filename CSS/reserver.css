@@ -28,6 +28,58 @@ li {
     height: 104pt;
     background-color: black;
 }
+#twitte {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#youtube {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#instagram {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#reseaux1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: -2vh;
+    left: -3vh;
+}
+
+#in {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#facebook {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#pinterest {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#reseaux2 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: relative;
+    left: -3vh;
+}
 /* pas a ce qu'il y a au-dessus bar du haut de la page */
 
 body{
@@ -47,7 +99,6 @@ h1{
     color: white;
 }
 .couverts{
-    background-color: white;
     width: 30vh;
     text-align: center;
     display: flex;
@@ -60,11 +111,9 @@ h1{
 }
 button{
     border: none;
-    background-color: none;
     width: 30vh;
 }
 .date{
-    background-color: white;
     width: 30vh;
     text-align: center;
     display: flex;
@@ -76,30 +125,175 @@ button{
     background-color: grey;
 }
 .horaire{
-    background-color: white;
-    width: 30vh;
     text-align: center;
-    display: flex;
-    justify-content: center;
     position: relative;
-    left: 10vh;
     top: 15vh;
     font-size: x-large;
-    background-color: grey;
+
 }
 .reserve{
-    background-color: white;
     width: 30vh;
     text-align: center;
     display: flex;
     justify-content: center;
     position: relative;
     left: 10vh;
-    top: 25vh;
+    bottom: -160px;
     font-size: x-large;
     background-color: white;
-    border-radius: 5vh;
 }
 .reserveenvoi{
     background-color: white;
+}
+#date{
+    width: 30vh;
+    text-align: center;
+}
+#appt-time{
+    width: 20vh;
+}
+#nom{
+    width: 45vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 3vh;
+    top: 2vh;
+    font-size: x-large;
+    border: none;
+}
+footer {
+    display: none;
+}
+.dropdown{
+    display: none;
+}
+
+@media(max-width:560px) {
+    html{
+        width: 48.7vh;
+        height: 200vh;
+        overflow: visible;
+    }
+    header {
+        position: relative;
+        bottom: 1.1vh;
+        height: 20vh;
+    }
+    body{
+        height: 200vh;
+    }
+    .first {
+        height: 19vh;
+    }
+    .dropdown{
+        display: block;
+        position: absolute;
+        left: 26.5vh;
+    }
+    .btn{
+        height: 6vh;
+        width: 12vh;
+        font-size: 2vh;
+    }
+    .dropdown-item{
+        position: relative;
+        right: 0vh;
+        font-size: 3vh;
+    }
+    .dropdown-menu{
+        width: 5px;
+    }
+    li{
+        width: 150px;
+    }
+    #logo {
+        position: absolute;
+        left: 0vh;
+        width: 25vh;
+        height: 18.9vh;
+        object-fit: cover;
+    }
+/*------------------------HEADER A AJOUTER SUR CHAQUE PAGE-----------------------------*/
+.box{
+    left: 0px;
+    width: 48.6vh;
+    height: 80vh;
+}
+.pad{
+    margin: 20px;
+}
+#nom{
+    left: -5px;
+}
+.couverts{
+    left: 55px;
+}
+.date{
+    left: 55px;
+}
+.horaire{
+    left: 0px;
+}
+.reserve{
+    left: 55px;
+}
+/*------------------------FOOTER A AJOUTER SUR CHAQUE PAGE-----------------------------*/
+footer {
+    display: block;
+    position: relative;
+    bottom: -79vh;
+    height: 21.1vh;
+    background-color: grey;
+}
+
+#twitte {
+    height: 7vh;
+    width: 7vh;
+    object-fit: cover;
+}
+
+#youtube {
+    height: 7vh;
+    width: 7vh;
+}
+
+#instagram {
+    height: 7vh;
+    width: 7vh;
+}
+
+#reseaux1mobile {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    position: relative;
+
+    top: 1vh;
+}
+
+#in {
+    height: 7vh;
+    width: 7vh;
+    object-fit: cover;
+}
+
+#facebook {
+    height: 7vh;
+    width: 7vh;
+}
+
+#pinterest {
+    height: 7vh;
+    width: 7vh;
+}
+
+#reseaux2mobile {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    position: relative;
+    top: 5vh;
+}
 }

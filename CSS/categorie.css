@@ -1,5 +1,6 @@
 html{
-    overflow: hidden;
+    width: 200vh;
+    overflow-x: hidden;
 }
 nav{
     height: 15vh;
@@ -26,6 +27,59 @@ li{
 body{
     background-color: black;
 }
+#twitte {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#youtube {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#instagram {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#reseaux1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: -2vh;
+    left: -3vh;
+}
+
+#in {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#facebook {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#pinterest {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#reseaux2 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: relative;
+    left: -3vh;
+}
+
 h3{
     position: relative;
     left: 16vh;
@@ -125,4 +179,183 @@ a{
     background-repeat: no-repeat;
     background-size: 40vh;
     background-position-y: -5vh;
+}
+footer {
+    display: none;
+}
+.dropdown{
+    display: none;
+}
+
+@media(max-width:560px) {
+    html{
+        width: 48.7vh;
+        height: 200vh;
+        overflow: visible;
+    }
+    header {
+        position: relative;
+        bottom: 1.1vh;
+        height: 20vh;
+    }
+    body{
+        height: 200vh;
+    }
+    .first {
+        height: 19vh;
+    }
+    .dropdown{
+        display: block;
+        position: absolute;
+        left: 26.5vh;
+    }
+    .btn{
+        height: 6vh;
+        width: 12vh;
+        font-size: 2vh;
+    }
+    .dropdown-item{
+        position: relative;
+        right: 0vh;
+        font-size: 3vh;
+    }
+    .dropdown-menu{
+        width: 5px;
+    }
+    li{
+        width: 150px;
+    }
+    #logo {
+        position: absolute;
+        left: 0vh;
+        width: 25vh;
+        height: 18.9vh;
+        object-fit: cover;
+    }
+/*------------------------HEADER A AJOUTER SUR CHAQUE PAGE-----------------------------*/
+.corps{
+    width: 30vh;
+}
+.wrap{
+    position: relative;
+    left: 2vh;
+    top: -5vh;
+    height: 15vh;
+    width: 35vh;
+    background-position-y: -150px;
+}
+.titre-img{
+    height: 0vh;
+    margin: 0vh;
+    left: 11vh;
+    top: 5vh;
+}
+.veggie{
+    position: relative;
+    left: 2vh;
+    top: 0vh;
+    height: 15vh;
+    width: 35vh;
+}
+.salade{
+    position: relative;
+    left: 2vh;
+    top: 5vh;
+    height: 15vh;
+    width: 35vh;
+}
+.sandwich{
+    position: relative;
+    left: 2vh;
+    top: 10vh;
+    height: 15vh;
+    width: 35vh;
+}
+.burger{
+    position: relative;
+    left: 2vh;
+    top: 15vh;
+    height: 15vh;
+    width: 35vh;
+    background-position-y: -120px;
+}
+.pate{
+    position: relative;
+    left: 2vh;
+    top: 20vh;
+    height: 15vh;
+    width: 35vh;
+}
+.sushi{
+    position: relative;
+    left: 2vh;
+    top: 25vh;
+    height: 15vh;
+    width: 35vh;
+    background-position-y: -230px;
+}
+.pizza{
+    position: relative;
+    left: 2vh;
+    top: 30vh;
+    height: 15vh;
+    width: 35vh;
+    background-position-y: -100px;
+}
+
+/*------------------------FOOTER A AJOUTER SUR CHAQUE PAGE-----------------------------*/
+footer {
+    display: block;
+    position: relative;
+    bottom: -39vh;
+    height: 21.1vh;
+    background-color: grey;
+}
+
+#twitte {
+    height: 7vh;
+    width: 7vh;
+}
+
+#youtube {
+    height: 7vh;
+    width: 7vh;
+}
+
+#instagram {
+    height: 7vh;
+    width: 7vh;
+}
+
+#reseaux1mobile {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    position: relative;
+
+    top: 1vh;
+}
+
+#in {
+    height: 7vh;
+    width: 7vh;
+}
+
+#facebook {
+    height: 7vh;
+    width: 7vh;
+}
+
+#pinterest {
+    height: 7vh;
+    width: 7vh;
+}
+
+#reseaux2mobile {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    position: relative;
+    top: 5vh;
+}
 }

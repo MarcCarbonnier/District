@@ -28,10 +28,62 @@ li {
     height: 104pt;
     background-color: black;
 }
+#twitte {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#youtube {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#instagram {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#reseaux1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: -2vh;
+    left: -3vh;
+}
+
+#in {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#facebook {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#pinterest {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#reseaux2 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: relative;
+    left: -3vh;
+}
 
 body {
     background-image: url(/images_the_district/juicy-pop-restaurant-5.jpg);
-    background-size: 300vh;
+    background-size: 200vh;
     background-repeat: no-repeat;
     height: 150vh;
 }
@@ -79,7 +131,8 @@ body {
 .container3 {
     left: 135vh;
 }
-.container4{
+
+.container4 {
     top: 80vh;
 }
 
@@ -105,6 +158,7 @@ body {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.255);
 }
+
 .banner-image3 {
     background-image: url(/images_the_district/food/Food-Name-6340.jpg);
     background-position: center;
@@ -113,6 +167,7 @@ body {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.255);
 }
+
 .banner-image4 {
     background-image: url(/images_the_district/food/Food-Name-433.jpeg);
     background-position: center;
@@ -186,4 +241,255 @@ p {
     border-color: rgba(255, 255, 255, 0.9);
     filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
     transition: all .3s ease;
+}
+
+footer {
+    display: none;
+}
+
+.dropdown {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+
+@media(max-width:560px) {
+    html {
+        width: 48.7vh;
+        height: 200vh;
+        overflow: visible;
+    }
+
+    header {
+        position: relative;
+        bottom: 1.1vh;
+        height: 20vh;
+    }
+
+    body {
+        height: 200vh;
+        background-image: none;
+        background-color: black;
+    }
+
+    .first {
+        height: 19vh;
+    }
+
+    .dropdown {
+        display: block;
+        position: absolute;
+        left: 26.5vh;
+    }
+
+    .btn {
+        height: 6vh;
+        width: 12vh;
+        font-size: 2vh;
+    }
+
+    .dropdown-item {
+        position: relative;
+        right: 0vh;
+        font-size: 3vh;
+    }
+
+    .dropdown-menu {
+        width: 5px;
+    }
+
+    li {
+        width: 150px;
+    }
+
+    #logo {
+        position: absolute;
+        left: 0vh;
+        width: 25vh;
+        height: 18.9vh;
+        object-fit: cover;
+    }
+
+    /*------------------------HEADER A AJOUTER SUR CHAQUE PAGE-----------------------------*/
+
+    .name {
+        left: 20px;
+    }
+
+    .dropdown {
+        padding-top: 5px;
+    }
+
+    .btn {
+        padding: 10px;
+    }
+
+    .name {
+        top: 3px;
+        margin-left: 50px;
+    }
+
+    .container,
+    .container2,
+    .container3,
+    .container4 {
+        border: none;
+    }
+
+
+    .title-mob {
+        position: relative;
+        top: -150px;
+        color: black;
+        font-size: xx-large;
+        background-color: rgba(128, 128, 128, 0.253);
+    }
+
+
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        display: none;
+    }
+
+    .container {
+        top: 200px;
+        left: 40px;
+        height: 230px;
+        margin: 0px;
+        background-color: rgba(0, 0, 0, 0);
+        padding: 0px;
+    }
+
+    .banner-image {
+        height: 230px;
+
+    }
+
+    .container2 {
+        top: 65vh;
+        left: 40px;
+        height: 230px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .banner-image2 {
+        top: 1px;
+        height: 230px;
+    }
+
+    .container3 {
+        top: 103vh;
+        left: 40px;
+        height: 230px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .banner-image3 {
+        top: 1px;
+        height: 230px;
+    }
+
+    .container4 {
+        top: 140vh;
+        left: 40px;
+        height: 230px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .banner-image4 {
+        top: 1px;
+        height: 230px;
+    }
+
+    .button-wrapper {
+        top: 146.5vh;
+        left: 200px;
+        display: none;
+    }
+
+    .fill {
+        width: 20vh;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .next {
+        width: 50px;
+    }
+
+
+    /*------------------------FOOTER A AJOUTER SUR CHAQUE PAGE-----------------------------*/
+    footer {
+        display: block;
+        position: relative;
+        bottom: -154.6vh;
+        height: 21.1vh;
+        background-color: grey;
+    }
+
+    #twitte {
+        height: 7vh;
+        width: 7vh;
+        object-fit: cover;
+    }
+
+    #youtube {
+        height: 7vh;
+        width: 7vh;
+    }
+
+    #instagram {
+        height: 7vh;
+        width: 7vh;
+    }
+
+    #reseaux1mobile {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        position: relative;
+
+        top: 1vh;
+    }
+
+    #in {
+        height: 7vh;
+        width: 7vh;
+        object-fit: cover;
+    }
+
+    #facebook {
+        height: 7vh;
+        width: 7vh;
+    }
+
+    #pinterest {
+        height: 7vh;
+        width: 7vh;
+    }
+
+    #reseaux2mobile {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        position: relative;
+        top: 5vh;
+    }
 }

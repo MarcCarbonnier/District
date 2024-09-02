@@ -1,3 +1,19 @@
+@keyframes drop {
+    from {
+        top: 0px;
+    }
+
+    70% {
+        top: 165px;
+        animation-timing-function: ease-in;
+    }
+
+    to {
+        top: 150px;
+        animation-timing-function: ease-out;
+    }
+}
+
 @keyframes background {
     from {
         background-image: url(/images_the_district/menu-pizza.jpg);
@@ -7,6 +23,7 @@
         background-image: url(/images_the_district/pizza.jpg);
     }
 }
+
 @keyframes background2 {
     from {
         background-image: url(/images_the_district/menu-burger.jpg);
@@ -16,7 +33,9 @@
         background-image: url(/images_the_district/burger.jpg);
     }
 }
+
 html {
+    width: 200vh;
     overflow: hidden;
 }
 
@@ -30,7 +49,7 @@ div {
 
 .first {
     background-color: grey;
-    width: 200vh;
+    width: 100%;
     height: 15vh;
     display: flex;
     justify-content: center;
@@ -48,7 +67,7 @@ li {
 }
 
 .bg {
-    background-image: url(/images_the_district/bg.jpg);
+    background-image: url(./images_the_district/bg.jpg);
     height: 20vh;
     background-repeat: no-repeat;
     background-size: 200vh;
@@ -80,7 +99,7 @@ li {
     animation-direction: alternate;
     position: absolute;
     width: 30vh;
-    height: 75vh;
+    height: 65vh;
     background-repeat: no-repeat;
     background-color: black;
 }
@@ -93,16 +112,17 @@ li {
     animation-direction: alternate;
     position: absolute;
     width: 30vh;
-    height: 75vh;
+    height: 65vh;
     background-repeat: no-repeat;
     background-color: black;
     position: relative;
-    left: 171vh;
+    left: 170vh;
 
 }
 
 .corps {
     background-color: black;
+    height: 65vh;
 }
 
 .paragraph {
@@ -126,6 +146,226 @@ li {
     color: black;
     background: none;
     top: 100pt;
-    left: 40pt;
-    font-size: xx-large;
+    left: 20pt;
+    font-size: 4vh;
+}
+
+#twitte {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#youtube {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#instagram {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#reseaux1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: -2vh;
+    left: -3vh;
+}
+
+#in {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#facebook {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#pinterest {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#reseaux2 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: relative;
+    left: -3vh;
+}
+
+footer {
+    display: none;
+}
+.dropdown{
+    display: none;
+}
+.btn1{
+    border: none;
+}
+
+@media(max-width:560px) {
+    html{
+        width: 48.7vh;
+        height: 200vh;
+        overflow: visible;
+    }
+    header {
+        position: relative;
+        bottom: 1.1vh;
+        height: 20vh;
+    }
+    body{
+        height: 200vh;
+    }
+    .first {
+        height: 19vh;
+    }
+    .dropdown{
+        display: block;
+        position: absolute;
+        left: 26.5vh;
+    }
+    .btn{
+        height: 6vh;
+        width: 12vh;
+        font-size: 2vh;
+    }
+    .dropdown-item{
+        position: relative;
+        right: 0vh;
+        font-size: 3vh;
+    }
+    .dropdown-menu{
+        width: 5px;
+    }
+    li{
+        width: 150px;
+    }
+    #logo {
+        position: absolute;
+        left: 0vh;
+        width: 25vh;
+        height: 18.9vh;
+        object-fit: cover;
+    }
+/*------------------------HEADER A AJOUTER SUR CHAQUE PAGE-----------------------------*/
+
+    .bg {
+        position: relative;
+        bottom: 1.1vh;
+        height: 15vh;
+    }
+
+    .d-flex {
+        position: relative;
+        bottom: 3vh;
+        height: 5vh;
+        width: 100vh;
+    }
+
+    .form-control {
+        font-size: 2vh;
+    }
+
+    .corps {
+        position: relative;
+        bottom: 1.1vh;
+        height: 100vh;
+    }
+
+    .paragraph {
+        position: absolute;
+        top: 20vh;
+        left: 10pt;
+        height: 50vh;
+        width: 45vh;
+        padding: 0%;
+    }
+
+    h4 {
+        font-size: 4vh;
+    }
+
+    .texte {
+        font-size: 3vh;
+        padding-top: 5pt;
+    }
+
+    .anim1 {
+        display: none;
+    }
+
+    .anim2 {
+        display: none;
+    }
+    .btn1{
+        border: none;
+    }
+/*------------------------FOOTER A AJOUTER SUR CHAQUE PAGE-----------------------------*/
+    footer {
+        display: block;
+        position: relative;
+        bottom: 1.1vh;
+        height: 66.5vh;
+        background-color: grey;
+    }
+
+    #twitte {
+        height: 15vh;
+        width: 15vh;
+    }
+
+    #youtube {
+        height: 15vh;
+        width: 15vh;
+
+    }
+
+    #instagram {
+        height: 15vh;
+        width: 15vh;
+
+    }
+
+    #reseaux1mobile {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        position: relative;
+
+        top: 10vh;
+    }
+
+    #in {
+        height: 15vh;
+        width: 15vh;
+    }
+
+    #facebook {
+        height: 15vh;
+        width: 15vh;
+    }
+
+    #pinterest {
+        height: 15vh;
+        width: 15vh;
+    }
+
+    #reseaux2mobile {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        position: relative;
+        top: 20vh;
+    }
 }

@@ -1,5 +1,5 @@
 html {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 nav {
@@ -28,6 +28,7 @@ li {
     height: 104pt;
     background-color: black;
 }
+
 #twitte {
     height: 4vh;
     width: 6vh;
@@ -81,89 +82,107 @@ li {
     left: -3vh;
 }
 
+/*------------------------------HEADER-----------------------------  */
 body {
-    background-image: url(/images_the_district/juicy-pop-restaurant-5.jpg);
-    background-size: 200vh;
+    background: linear-gradient(rgb(6, 6, 126), rgb(7, 91, 116));
     background-repeat: no-repeat;
-    height: 150vh;
-}
-
-.name {
-    background: linear-gradient(grey, rgba(255, 255, 255, 0.425));
-    width: 20vh;
-    position: relative;
-    left: 11vh;
-    top: 5vh;
-    border-radius: 5vh;
-}
-
-.titre {
-    text-align: center;
+    background-size: 200vh;
+    height: 100vh;
 }
 
 
-.wrapper {
+
+/*-------------------------------------------Formulaire------------------------------*/
+
+
+form {
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    width: 70vh;
+    margin-top: 100px;
+    margin-left: 60vh;
+}
+
+form h1 {
+    font-size: 20px;
+}
+
+form .separation {
     width: 100%;
+    height: 1px;
+    background-color: #747cdf;
+}
+
+form .corps-formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+form .corps-formulaire .groupe {
+    position: relative;
+    /* Pour mettre positionner l’élément dans le flux normal de la page */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .corps-formulaire .gauche .groupe input {
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid #c9c9c9;
+    outline-color: #747cdf;
+    border-radius: 5px;
+}
+
+form .corps-formulaire .gauche .groupe i {
+    position: absolute;
+    /* positionné par rapport à son parent le plus proche positionné */
+    left: 0;
+    top: 25px;
+    padding: 9px 8px;
+    color: #747cdf;
+}
+
+form .corps-formulaire .droite {
+    margin-left: 40px;
+}
+
+form .corps-formulaire .droite .groupe {
     height: 100%;
 }
 
-h1 {
-    font-family: 'Righteous', sans-serif;
-    color: rgba(255, 255, 255, 0.98);
-    text-transform: uppercase;
-    font-size: 2.4rem;
+form .corps-formulaire .droite .groupe textarea {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid #747cdf;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    height: 72%;
 }
 
-p {
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    font-size: 0.8rem;
-    line-height: 150%;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.button-wrapper {
-    margin-top: 18px;
-}
-
-.btn {
+form .pied-formulaire button {
+    margin-top: 10px;
+    background-color: #747cdf;
+    color: white;
+    font-size: 15px;
     border: none;
-    padding: 12px 24px;
-    border-radius: 24px;
-    font-size: 12px;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
     cursor: pointer;
+    transition: transform 0.5s;
 }
 
-.btn+.btn {
-    margin-left: 10px;
+form .pied-formulaire button:hover {
+    transform: scale(1.05);
 }
 
-.outline {
-    background: transparent;
-    color: rgba(0, 212, 255, 0.9);
-    border: 1px solid rgba(0, 212, 255, 0.6);
-    transition: all .3s ease;
+/*-------------------------------------------------------------------------------*/
 
-}
-
-.outline:hover {
-    transform: scale(1.125);
-    color: rgba(255, 255, 255, 0.9);
-    border-color: rgba(255, 255, 255, 0.9);
-    transition: all .3s ease;
-}
-
-.fill {
-    background: rgba(0, 212, 255, 0.9);
-    color: rgba(255, 255, 255, 0.95);
-    filter: drop-shadow(0);
-    font-weight: bold;
-    transition: all .3s ease;
-}
 
 footer {
     display: none;
@@ -171,17 +190,6 @@ footer {
 
 .dropdown {
     display: none;
-}
-
-.mobile {
-    display: none;
-}
-
-.fill:hover {
-    transform: scale(1.125);
-    border-color: rgba(255, 255, 255, 0.9);
-    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
-    transition: all .3s ease;
 }
 
 @media(max-width:560px) {
@@ -199,8 +207,6 @@ footer {
 
     body {
         height: 200vh;
-        background-image: none;
-        background-color: black;
     }
 
     .first {
@@ -242,80 +248,20 @@ footer {
     }
 
     /*------------------------HEADER A AJOUTER SUR CHAQUE PAGE-----------------------------*/
-
-    .name {
-        left: 20px;
-    }
-
-    .dropdown {
-        padding-top: 5px;
-    }
-
-    .btn {
-        padding: 10px;
-    }
-
-    .name {
-        top: 3px;
-        margin-left: 50px;
-    }
-
-    .container,
-    .container2,
-    .container3,
-    .container4 {
-        border: none;
-    }
-
-
-    .title-mob {
+    form{
+        margin-top: 0px;
+        margin-left: 2px;
+        width: 48vh;
+        height: 100vh;
         position: relative;
-        top: -150px;
-        color: black;
-        font-size: xx-large;
-        background-color: rgba(128, 128, 128, 0.253);
+        top: 20vh;
     }
-
-
-
-    h1 {
-        font-size: 20px;
-    }
-
-    p {
-        display: none;
-    }
-
-
-    .button-wrapper {
-        top: 146.5vh;
-        left: 200px;
-        display: none;
-    }
-
-    .fill {
-        width: 20vh;
-    }
-
-    .button {
-        display: none;
-    }
-
-    .mobile {
-        display: flex;
-        justify-content: center;
-    }
-
-    .next {
-        width: 50px;
-    }
-
 
     /*------------------------FOOTER A AJOUTER SUR CHAQUE PAGE-----------------------------*/
     footer {
         display: block;
         position: relative;
-        bottom: -154.6vh;
+        bottom: -58.9vh;
         height: 21.1vh;
         background-color: grey;
     }
