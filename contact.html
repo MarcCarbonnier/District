@@ -89,7 +89,7 @@
       </div>
     </nav>
   </header>
-  <form id="formulaire" nctype="multipart/form-data" >
+  <form id="formulaire" action="./php/contact.php" method="post" nctype="multipart/form-data" >
     <fieldset>
     <h1>Contactez-nous</h1>
     <div class="separation"></div>
@@ -102,12 +102,12 @@
         </div>
         <div class="groupe">
           <label for="email">Votre adresse e-mail</label>
-          <input type="text" autocomplete="off" id="email" name="mail"  required/>
+          <input type="email" autocomplete="off" id="email" name="email"  required/>
           <i class="fas fa-envelope"></i>
         </div>
         <div class="groupe">
           <label for="tel">Votre téléphone</label>
-          <input type="text" autocomplete="off" id="tel" name="telephone" required/>
+          <input type="tel" autocomplete="off" id="tel" name="tel" required/>
           <i class="fas fa-mobile"></i>
         </div>
       </div>
@@ -121,8 +121,8 @@
     </div>
 
     <div class="pied-formulaire">
-      <button id="sub" type="submit" name="Envoyer">Envoyer le message</button>
-      <button id="reset" type="reset" name="Supprimer">Effacer</button>
+      <button id="sub" type="submit" name="sub">Envoyer le message</button>
+      <button id="reset" type="reset" name="reset">Effacer</button>
     </div>
     </fieldset>
   </form>

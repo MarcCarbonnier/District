@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //validation du formulaire
     let verif = true;
     verif += validerChamp(
-      /^[a-zA-ZÀ-ÿ-]+$/,
+      /^[a-zA-ZÀ-ÿ-\s]+$/,
       document.getElementById("nom"),
       "Veuillez saisir des caractères valide"
     );

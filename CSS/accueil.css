@@ -67,7 +67,7 @@ li {
 }
 
 .bg {
-    background-image: url(./images_the_district/bg.jpg);
+    background-image: url(../images_the_district/bg.jpg);
     height: 20vh;
     background-repeat: no-repeat;
     background-size: 200vh;
