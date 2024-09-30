@@ -148,6 +148,7 @@ button{
 }
 .reserveenvoi{
     background-color: white;
+    border: none;
 }
 #date{
     width: 30vh;

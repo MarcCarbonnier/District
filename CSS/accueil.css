@@ -33,7 +33,7 @@
         background-image: url(/images_the_district/burger.jpg);
     }
 }
-
+/*---------------------------------------------------------------HEADER------------------------------------------------------------------------*/
 html {
     width: 200vh;
     overflow: hidden;
@@ -65,7 +65,7 @@ li {
     height: 104pt;
     background-color: black;
 }
-
+/*----------------------------------------------------------------------------------------*/
 .bg {
     background-image: url(../images_the_district/bg.jpg);
     height: 20vh;

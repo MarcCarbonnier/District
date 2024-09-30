@@ -1,0 +1,95 @@
+
+html {
+    width: 200vh;
+    overflow: hidden;
+}
+
+nav {
+    height: 15vh;
+}
+
+div {
+    border: none;
+}
+
+.first {
+    background-color: grey;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    width: 32vh;
+    text-align: center;
+}
+
+#logo {
+    width: 100pt;
+    height: 104pt;
+    background-color: black;
+}
+
+#twitte {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#youtube {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#instagram {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#reseaux1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: -2vh;
+    left: -3vh;
+}
+
+#in {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#facebook {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#pinterest {
+    height: 4vh;
+    width: 6vh;
+    object-fit: cover;
+}
+
+#reseaux2 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: relative;
+    left: -3vh;
+}
+
+footer {
+    display: none;
+}
+.dropdown{
+    display: none;
+}
+.btn1{
+    border: none;
+}

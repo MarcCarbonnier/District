@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const formulaire = document.getElementById("formulaire");
 
-  formulaire.addEventListener("submit", function (e) {
-    e.preventDefault(); //évite l'envoi du fomulaire sans la verif
+
 
     let verif = true;
     verif += validerChamp(
@@ -10,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("nom"),
       "Veuiller saisir des caractères valide"
     );
-  });
+
 
   function validerChamp(regex, champ, messageErreur) {
     if (!regex.test(champ.value)) {
@@ -20,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     return true;
   }
+
 
   // On définit quelques variables
   let nativePicker = document.querySelector(".nativeTimePicker");
@@ -81,5 +81,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (hourSelect.value === "18") {
       minuteSelect.value = "00";
     }
+  }
+  function submitreservation(){
+    let name = document.getElementById("nom").value;
+    let guest = document.getElementById("guests").value;
+    let message = "Merci " + name + " de votre réservation pour " + guest;
+    alert (message);
   }
 });

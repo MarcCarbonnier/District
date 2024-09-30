@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     verif += validerChamp(
       /^[a-zA-ZÀ-ÿ-\s]+$/,
       document.getElementById("nom"),
-      "Veuillez saisir des caractères valide"
+      "Veuillez saisir des caractère valide"
     );
     verif += validerChamp(
       /^[a-z0-9.-]+@[a-z0-9.-]{2,}.[a-z]{2,4}$/,
@@ -33,7 +33,3 @@ function validerChamp(regex, champ, messageErreur) {
   return true;
 }
 
-$("#nav").addClass("hide");
-$("#menu").click(function () {
-  $("#nav").slideToggle(400);
-});
